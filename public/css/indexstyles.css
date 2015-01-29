@@ -1,0 +1,43 @@
+body {
+	background-color: orange;
+}
+
+/*customized header for the layout page*/
+.header {
+	margin: 0;
+	height: 4em;
+	width: 100%;
+	margin-left: -10px;
+	margin-top: -8px;
+	border: 1px solid black;
+}
+
+/*customized intro for the layout page*/
+.intro {
+	margin: 0;
+	height: 20em;
+	width: 100%;
+	margin-left: -10px;
+	margin-top: -8px;
+	border: 1px solid black;
+}
+
+/*customized signup for the layout page*/
+.signup {
+	margin: 0;
+	height: 4em;
+	width: 100%;
+	margin-left: -10px;
+	margin-top: -8px;
+	border: 1px solid black;
+}
+
+/*customized content for the layout page*/
+.content {
+	margin: 0;
+	height: 4em;
+	width: 100%;
+	margin-left: -10px;
+	margin-top: -8px;
+	border: 1px solid black;
+}

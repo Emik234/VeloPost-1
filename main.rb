@@ -12,8 +12,12 @@ set :sessions, true
 set :database, "sqlite3:velopost.sqlite3"
 
 get '/' do
-
 	erb :index
+end
+
+get '/feed' do
+	erb :feed
+end
 
 end
 
@@ -21,7 +25,9 @@ get '/loginpage' do
 	erb :login
 end
 
+
 get '/accountsettings' do
 	erb :asettings
 
 end
+
