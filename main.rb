@@ -10,3 +10,9 @@ use Rack::Flash, :sweep => true
 set :sessions, true
 
 set :database, "sqlite3:velopost.sqlite3"
+
+get '/' do
+
+	erb :index
+
+end
