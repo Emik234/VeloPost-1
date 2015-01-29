@@ -1,3 +1,4 @@
+
 /*NAV BAR*/
 
 .navbar{
@@ -8,5 +9,78 @@
 	margin-left: -10px;
 	margin-top: -8px;
 	border: 1px solid black;
+	background: white;
 
 }
+
+/*.navlogo{
+	height: 50px;
+	width: 50px;
+	border: 1px dashed aqua;
+	display: inline-block;
+	float: left;
+}*/
+
+/*.header{
+	display: inline;
+	text-align: center;
+}
+*/
+
+
+/*FOOTER*/
+.footer{
+	height: 4em;
+	border:1px solid black;
+	margin-top: 35%;
+	bottom: 0;
+}
+/*LOGIN ERB STYLES*/
+
+.jumboLogin{
+	height: 30em;
+	width: 100%;
+	border: 1px solid black;
+	padding-top:50px;
+
+}
+
+.loginbox, .loginimage{
+	height: 30em;
+	width: 49%;
+	border: 1px black solid;
+	float: left;
+	margin-top: 20px;
+}
+.loginimage{
+	margin-left: 28px;
+}
+
+.loginbox form{
+	border: 1px solid black;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
