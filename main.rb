@@ -16,3 +16,7 @@ get '/' do
 	erb :index
 
 end
+
+get '/loginpage' do
+	erb :login
+end
