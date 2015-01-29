@@ -20,3 +20,8 @@ end
 get '/loginpage' do
 	erb :login
 end
+
+get '/accountsettings' do
+	erb :asettings
+
+end

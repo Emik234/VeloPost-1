@@ -33,7 +33,7 @@
 	height: 4em;
 	border:1px solid black;
 	margin-top: 35%;
-	bottom: 0;
+	clear: both;
 }
 /*LOGIN ERB STYLES*/
 
@@ -66,8 +66,35 @@
 }
 
 
+/*ACCOUNT SETTINGS STYLES*/
+
+.accountsettingsbody{
+	padding-top: 70px;
+	height: 15em;
+}
+
+.userpic {
+	margin-top: 20px;
+	height: 150px;
+	width: 150px;
+	border: 1px solid black;
+	float: left;
+}
+
+.userdetails{
+	text-align: center;
+	width: 900px;
+	margin: 0 auto;
 
 
+}
+
+.userinfo {
+	border: 1px solid black;;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 5em;
+}
 
 
 
