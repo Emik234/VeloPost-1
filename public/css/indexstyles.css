@@ -1,10 +1,10 @@
-body {
+.layout_body {
 	background-image: url(../images/crank_shift.jpg);
 	color: white;
 }
 
 /*customized header for the layout page*/
-/*.header {
+.header {
 	margin: 0;
 	height: 4em;
 	width: 100%;
@@ -12,7 +12,7 @@ body {
 	margin-top: -8px;
 	border: 1px solid white;
 }
-*/
+
 /*customized intro for the layout page*/
 .intro {
 	z-index: -1;
