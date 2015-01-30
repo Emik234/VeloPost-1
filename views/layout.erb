@@ -5,6 +5,8 @@
 	<title>VeloPost!</title>
 	<link rel="stylesheet" type="text/css" href="css/indexstyles.css">
  	<link rel="stylesheet" href="../css/vpstyles.css">
+ 	<link rel="stylesheet" href="../css/profilestyle.css">
+
 </head>
 <body>
 	<div class="navbar">
@@ -13,10 +15,14 @@
 			<li><a href="/feed">Home |</a></li>
 			<li><a href="/profile">Profile |</a></li>
 			<li><a href="/accountsettings">Settings |</a></li>
-			<li><a href="/deleteaccount">Logout</a></li>
+			<li><a href="/logout"><%= "#{check_login}" %></a></li>
 			<li class='logo'>VeloPost</li>
 		</ul>
 	</div>
+	
+	<%= flash[:notice] if flash[:notice]%>
+	<%= flash[:alert] if flash[:alert]%>
+
 
 
 
@@ -38,7 +44,8 @@
 <%=yield%>
 	
 	<footer class="footer">
-		
+		<ul class='bottomlinks'>
+			<li>2015 VeloPost</li>
 	</footer>	
 </body>
 </html>

@@ -6,9 +6,19 @@
 <div>
 	<div class="loginbox">
 	<h1>Log-In</h1>
-	<div class="flashalert">
-			<%= flash[:alert] if flash[:alert] %>
-	</div>
+
+	<% if flash[:notice] %>
+  		<div class="flash notice">
+   		 	<%= flash[:notice] %>
+  		</div>
+	<% end %>
+	
+	<% if flash[:alert] %>
+  		<div class="flash alert">
+   		 	<%= flash[:alert] %>
+  		</div>
+	<% end %>
+
 
 		<form method="POST" action="/signin">
 

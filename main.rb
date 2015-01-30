@@ -13,30 +13,45 @@ set :database, "sqlite3:velopost.sqlite3"
 
 get '/' do
 	erb :index
+
 end
 
 get '/feed' do
 	
 		erb :feed
+		
 end
 
 
 get '/loginpage' do
 	erb :login
+	
 end
 
 
 get '/accountsettings' do
+	if current_user != nil 
 	erb :asettings
-
+	else
+		flash[:alert] = "You are not logged in! "
+		redirect '/loginpage'
+	end 
+	
 end
 
 get '/profile' do 
-	erb :profile
+	if current_user != nil
+		erb :profile
+	else 
+		flash[:alert] = "You are not logged in! "
+		redirect '/loginpage'
+	end
+
 end
 
 get '/deleteaccount' do 
 	erb :deleteacc
+	
 end
 
 post '/signin' do
@@ -63,6 +78,7 @@ end
 
 get '/deleteaccount' do
 	erb :deleteacc
+	
 
 end
 
@@ -70,12 +86,26 @@ end
 get '/logout' do
 	session[:user_id] = nil
 	redirect '/loginpage'
+	flash[:alert] = "You have been logged out!"
+	
 end
 
 def current_user
 	if session[:user_id]
 		@current_user = User.find(session[:user_id])
 	end
+end
+
+def check_login 
+	if current_user != nil
+		@loginout = "Logout"
+
+	else 
+		@loginout = "Login"
+	end
+
+
+
 end
 
 
