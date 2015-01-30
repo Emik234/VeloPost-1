@@ -130,6 +130,16 @@ li{
 	margin-top: 5em;
 }
 
+.updateinfo {
+	border: 1px solid black;
+	font-weight: 500;
+	font-size: 10px;
+}
+
+.updateinfo:hover {
+	background-color: #636363;
+}
+
 /*LINK STYLES*/
 a:link{
 	text-decoration: none;
@@ -153,7 +163,12 @@ a:hover{
 
 
 
+/*FLASH STYLES*/
 
+.alert {
+	text-align: center;
+	color: red;
+}
 
 
 
