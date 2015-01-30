@@ -19,8 +19,6 @@ get '/feed' do
 	erb :feed
 end
 
-end
-
 get '/loginpage' do
 	erb :login
 end
