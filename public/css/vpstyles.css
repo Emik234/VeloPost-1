@@ -53,7 +53,9 @@ li{
 	margin-top: 35%;
 	clear: both;
 	bottom: 0;
-
+}
+.bottomlinks{
+	text-align: center;
 }
 /*LOGIN ERB STYLES*/
 

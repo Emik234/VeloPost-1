@@ -1,0 +1,29 @@
+.leftsidebar{
+	margin-top: 40px;
+	width: 25%;
+	border-right: 1px black solid;
+	height: 33.3%;
+	float: left;
+
+}
+.profilepic{
+	width: 200px;
+	border: solid black 1px;
+	margin-top: 15px;
+}
+
+.mainbody{
+	padding-top: 100px;
+	width: 60%;
+	margin-left: 375px;
+}
+.followershead{
+	width: 60%;
+}
+.followers{
+	margin-left: 375px;
+}
+img{
+	width: 150px;
+
+}
