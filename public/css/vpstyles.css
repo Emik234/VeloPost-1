@@ -65,6 +65,13 @@
 	border-radius: 30px;
 }
 
+.flashalert{
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px
+
+}
 
 /*ACCOUNT SETTINGS STYLES*/
 

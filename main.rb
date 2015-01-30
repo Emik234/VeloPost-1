@@ -16,10 +16,10 @@ get '/' do
 end
 
 get '/feed' do
-	erb :feed
+	
+		erb :feed
 end
 
-end
 
 get '/loginpage' do
 	erb :login
@@ -30,4 +30,36 @@ get '/accountsettings' do
 	erb :asettings
 
 end
+
+post '/signin' do
+	@user = User.where(params[:user]).first
+
+	if @user && @user.password == params[:password]
+		flash[:notice] = "You have successfully signed into Velo Post!"
+		session[:user_id] = @user.id
+		redirect '/feed'
+	else 
+		flash[:alert] = "Invalid log in information!"
+		redirect '/loginpage'
+	end
+
+
+end
+
+post '/signup' do
+	@user = User.create(fname: params[:firstname], lname: params[:lastname], email: params[:email], password: params[:password])
+	redirect '/loginpage'
+
+end
+
+
+
+
+
+
+
+
+
+
+
 

@@ -5,7 +5,11 @@
 <div>
 	<div class="loginbox">
 	<h1>Log-In</h1>
-		<form method="POST" action="">
+	<div class="flashalert">
+			<%= flash[:alert] if flash[:alert] %>
+	</div>
+
+		<form method="POST" action="/signin">
 
 			<p>
 				<label for="email">Email: </label>
