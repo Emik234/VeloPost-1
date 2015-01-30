@@ -7,11 +7,28 @@
 	height: 4em;
 	width: 100%;
 	margin-left: -10px;
-	margin-top: -8px;
+	margin-top: -5px;
 	border: 1px solid black;
 	background: white;
+	display: inline;
+
 
 }
+/*STYLE FOR TOP LINKS*/
+.toplinks{
+	list-style: none;
+	font-size: 1.2em;
+}
+li{
+	display: inline;
+
+}
+.logo{
+	margin-left: 700px;
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
 
 /*.navlogo{
 	height: 50px;
@@ -34,6 +51,8 @@
 	border:1px solid black;
 	margin-top: 35%;
 	clear: both;
+	bottom: 0;
+
 }
 /*LOGIN ERB STYLES*/
 
@@ -109,8 +128,17 @@
 	margin-top: 5em;
 }
 
-
-/*FEED STYLES*/
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	font-weight: bold;
+}
 
 .feedbody {
 	padding-top:50px;
