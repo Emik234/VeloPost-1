@@ -1,6 +1,24 @@
 <div class="feedbody">
-	
-	<h1><%= "Hello #{current_user.fname if current_user} ! "%></h1>
+	<div class="">
+
+		<h1><%= "Hello #{current_user.fname if current_user} ! "%></h1>
+
+
+	</div>
+	<%= flash[:notice] if flash[:notice]%>
+	<%= flash[:alert] if flash[:alert]%>
+	<div class="postbox">
+		
+		<form action="/post" method="POST">
+			<textarea name="blogpost" cols="30" rows="10"></textarea>
+			<p>
+			<input type="submit" value="VeloPost!">
+			</p>
+		</form>
+		
+	</div>
+
+	<%= @post.blogpost %>
 
 
 

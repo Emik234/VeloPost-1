@@ -10,35 +10,35 @@
 		<div class="userinfo">
 			<form action="/updatesettings" method="POST">
 				<h4>
-					First Name: <input placeholder="<%= current_user.fname %>" type="text">
+					First Name: <input value="<%= current_user.fname %>" type="text" name="[user]fname">
 				</h4>
 
 				<h4>
-					Last Name: <input placeholder="<%= current_user.lname %>" type="text">
+					Last Name: <input value="<%= current_user.lname %>" type="text" name="[user]lname">
 				</h4>
 
 				<h4>
-					Email: <input placeholder="<%= current_user.email %>" type="text">
+					Email: <input value="<%= current_user.email %>" type="text" name="[user]email">
 				</h4>
 
 				<h4>
-					Location: <input placeholder="<%= current_user.address %>"type="text">
+					Location: <input value="<%= current_user.address %>"type="text" name="[user]address">
 				</h4>
 
 				<h4>
-					Phone: <input placeholder="<%= current_user.phone %>" type="text">
+					Phone: <input value="<%= current_user.phone %>" type="text" name="[user]phone">
 				</h4>
 
 				<h4>
-					Gender: <input placeholder="<%= current_user.gender %>" type="text">
+					Gender: <input value="<%= current_user.gender %>" type="text" name="[user]gender">
 				</h4>
 
 				<h4>
-					Favorite Bike: <input placeholder="<%= current_user.bikemodel %>" type="text">
+					Favorite Bike: <input value="<%= current_user.bikemodel %>" type="text" name="[user]bikemodel">
 				</h4>
 
 				<h4>
-					Bio: <input placeholder="<%= current_user.bio %>" type="text">
+					Bio: <br><textarea "<%= current_user.bio %>" type="text" name="[user]bio"><%= current_user.bio %></textarea>
 				</h4>
 				<input class="updateinfo" type="submit" value="Update Info">
 

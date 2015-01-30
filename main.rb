@@ -17,8 +17,11 @@ get '/' do
 end
 
 get '/feed' do
+	@post = Post.last
 	
-		erb :feed
+	erb :feed
+
+
 		
 end
 
@@ -70,7 +73,7 @@ post '/signin' do
 end
 
 post '/signup' do
-	@user = User.create(fname: params[:firstname], lname: params[:lastname], email: params[:email], password: params[:password])
+	@user = User.create(fname: params[:fname], lname: params[:lname], email: params[:email], password: params[:password])
 	redirect '/loginpage'
 
 end
@@ -91,9 +94,29 @@ get '/logout' do
 end
 
 post '/updatesettings' do 
-	
+
+	current_user.update(params[:user])
+	flash[:notice] = "You have updated your info!"
+	redirect '/accountsettings'
+
 
 end
+
+post '/post' do
+
+	@blogpost = Post.new(blogpost: params[:blogpost])
+
+	if 	@blogpost.save
+		flash[:notice] = "Successfully posted!"
+		redirect back
+		
+	else 
+		flash[:alert] = "Your post can not be blank!"
+		redirect '/feed'
+	end
+
+
+end 
 
 def current_user
 	if session[:user_id]
@@ -108,8 +131,6 @@ def check_login
 	else 
 		@loginout = "Login"
 	end
-
-
 
 end
 
