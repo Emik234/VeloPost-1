@@ -55,7 +55,7 @@ get '/deleteaccount' do
 end
 
 post '/signin' do
-	@user = User.where(params[:user]).first
+	@user = User.where(email: params[:email]).first
 
 	if @user && @user.password == params[:password]
 		flash[:notice] = "You have successfully signed into Velo Post!"
