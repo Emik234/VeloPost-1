@@ -53,6 +53,23 @@ post '/signup' do
 end
 
 
+get '/deleteaccount' do
+	erb :deleteacc
+
+end
+
+
+get '/logout' do
+	session[:user_id] = nil
+	redirect '/loginpage'
+end
+
+def current_user
+	if session[:user_id]
+		@current_user = User.find(session[:user_id])
+	end
+end
+
 
 
 
