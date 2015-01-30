@@ -17,15 +17,21 @@
 }
 /*STYLE FOR TOP LINKS*/
 .toplinks{
+	padding-top: 10px;
 	list-style: none;
 	font-size: 1.2em;
+
 }
 li{
+
 	display: inline;
 
 }
 .logo{
-	margin-left: 700px;
+	/*margin-left: 700px;*/
+	margin-top: -15px;
+	padding-right: 5px;
+	float: right;
 	font-size: 2.4em;
 	font-weight: bold;
 }

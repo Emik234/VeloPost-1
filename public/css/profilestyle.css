@@ -16,6 +16,16 @@
 	padding-top: 100px;
 	width: 60%;
 	margin-left: 375px;
+
+}
+
+.mainbody h1, .mainbody p, .followershead{
+	padding-left: 50px;
+}
+
+.followersprofiles {
+	display: inline-block;
+	padding: ;
 }
 .followershead{
 	width: 60%;
