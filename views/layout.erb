@@ -15,10 +15,14 @@
 			<li><a href="/feed">Home |</a></li>
 			<li><a href="/profile">Profile |</a></li>
 			<li><a href="/accountsettings">Settings |</a></li>
-			<li><a href="/deleteaccount">Logout</a></li>
+			<li><a href="/logout"><%= "#{check_login}" %></a></li>
 			<li class='logo'>VeloPost</li>
 		</ul>
 	</div>
+	
+	<%= flash[:notice] if flash[:notice]%>
+	<%= flash[:alert] if flash[:alert]%>
+
 
 
 

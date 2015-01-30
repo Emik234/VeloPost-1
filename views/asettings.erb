@@ -8,41 +8,46 @@
 		<h1>Account Settings</h1>
 		
 		<div class="userinfo">
-			<h4>
-				First Name: <input type="text">
-			</h4>
-			<h4>
-				Last Name: <input type="text">
-			</h4>
-			<h4>
-				Email: <input type="text">
-			</h4>
-			<h4>
-				Location: <input type="text">
-			</h4>
-			<h4>
-				Phone: <input type="text">
-			</h4>
-			<h4>
-				Gender: <input type="text">
-			</h4>
-			<h4>
-				Favorite Bike: <input type="text">
-			</h4>
-			<h4>
-				Bio: <input type="text">
-			</h4>
-			<h4>
-				Delete Account? Click <a href="/deleteaccount">Here.</a>			
-			</h4>
+			<form action="/updatesettings" method="POST">
+				<h4>
+					First Name: <input placeholder="<%= current_user.fname %>" type="text">
+				</h4>
+
+				<h4>
+					Last Name: <input placeholder="<%= current_user.lname %>" type="text">
+				</h4>
+
+				<h4>
+					Email: <input placeholder="<%= current_user.email %>" type="text">
+				</h4>
+
+				<h4>
+					Location: <input placeholder="<%= current_user.address %>"type="text">
+				</h4>
+
+				<h4>
+					Phone: <input placeholder="<%= current_user.phone %>" type="text">
+				</h4>
+
+				<h4>
+					Gender: <input placeholder="<%= current_user.gender %>" type="text">
+				</h4>
+
+				<h4>
+					Favorite Bike: <input placeholder="<%= current_user.bikemodel %>" type="text">
+				</h4>
+
+				<h4>
+					Bio: <input placeholder="<%= current_user.bio %>" type="text">
+				</h4>
+				<input class="updateinfo" type="submit" value="Update Info">
+
+				<h4>
+					Delete Account? Click <a href="/deleteaccount">Here</a>.			
+				</h4>
+			</form>
 		</div>
 	</div>
-
-
-
-
-
-
 
 
 
