@@ -7,11 +7,29 @@
 	height: 4em;
 	width: 100%;
 	margin-left: -10px;
-	margin-top: -8px;
+	margin-top: -5px;
 	border: 1px solid black;
 	background: white;
+	display: inline;
+	top: 0;
+
 
 }
+/*STYLE FOR TOP LINKS*/
+.toplinks{
+	list-style: none;
+	font-size: 1.2em;
+}
+li{
+	display: inline;
+
+}
+.logo{
+	margin-left: 700px;
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
 
 /*.navlogo{
 	height: 50px;
@@ -34,6 +52,8 @@
 	border:1px solid black;
 	margin-top: 35%;
 	clear: both;
+	bottom: 0;
+
 }
 /*LOGIN ERB STYLES*/
 
@@ -42,6 +62,12 @@
 	width: 100%;
 	border: 1px solid black;
 	padding-top:50px;
+	background-image: url('../images/bgblur.jpg');
+	color: white;
+}
+
+.jumbohead span{
+	border: 1px solid white;
 
 }
 
@@ -89,10 +115,11 @@
 }
 
 .userdetails{
-	text-align: center;
+	text-align: left;
 	width: 900px;
 	margin: 0 auto;
-
+	padding-left: 50px;
+	
 
 }
 
@@ -103,8 +130,22 @@
 	margin-top: 5em;
 }
 
+/*LINK STYLES*/
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	font-weight: bold;
+}
 
-
+.feedbody {
+	padding-top:50px;
+}
 
 
 
