@@ -31,6 +31,14 @@ get '/accountsettings' do
 
 end
 
+get '/profile' do 
+	erb :profile
+end
+
+get '/deleteaccount' do 
+	erb :deleteacc
+end
+
 post '/signin' do
 	@user = User.where(params[:user]).first
 
