@@ -1,16 +1,8 @@
-
+/*the completed layout for the lnading page options goes here */
 .layout_body {
 	background-image: url(../images/crank_shift.jpg);
 	color: white;
-
-/*customized header for the layout page*/
-/*.header {
-	margin: 0;
-	height: 4em;
-	width: 100%;
-	margin-left: -10px;
-	margin-top: -8px;
-	border: 1px solid white;*/
+	font-family: arial;
 }
 
 /*customized intro for the layout page*/
@@ -19,7 +11,6 @@
 	height: 20em;
 	width: 99%;
 	margin-left: -1px;
-	/*margin-top: -1px;*/
 	margin-right: -40px;
 	background: rgba(1,5,8, 0.6);
 	border: 1px solid white;
@@ -27,6 +18,14 @@
 
 .intro h1 {
 	padding-top: 50px;
+}
+/*customized image within the intro class*/
+.intro img {
+	display: block;
+	height: 58%;
+	width: 35%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*customized signup for the layout page*/
@@ -54,4 +53,12 @@
 	margin-bottom: -20px;
 	background: rgba(1,5,8, 0.6);
 	border: 1px solid white;
+}
+/*customized content for the image within the content class*/
+.content img {
+	display: block;
+	height: 50%;
+	width: 65%;
+    margin-left: auto;
+    margin-right: auto;
 }
